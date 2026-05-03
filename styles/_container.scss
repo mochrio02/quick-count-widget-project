@@ -1,0 +1,16 @@
+.container {
+  width: 970px;
+  font-family: "Inter", sans-serif;
+  padding: 12px 24px;
+  background: url("../img/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 42px;
+  row-gap: 22px;
+}

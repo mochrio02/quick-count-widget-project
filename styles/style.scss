@@ -1,0 +1,55 @@
+/*
+  SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+$redColor: #e4150a;
+$yellowColor: #e9830c;
+$blueColor: #0f428e;
+
+@mixin displayFlex($jc, $ai, $gap) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@mixin capresCawapres($width, $color) {
+  .img-container {
+    text-align: center;
+  }
+
+  img {
+    width: $width;
+  }
+
+  .nama {
+    background-color: $color;
+  }
+
+  .name-tag-container {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@import "./general";
+
+@import "./container";
+
+@import "./flags";
+
+@import "./head";
+
+@import "./totalSuaraMasuk";
+
+@import "./capresCawapres";

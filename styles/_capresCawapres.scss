@@ -1,0 +1,84 @@
+.capres-cawapres {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 8px;
+  position: relative;
+}
+
+.capres-cawapres-1,
+.capres-cawapres-2,
+.capres-cawapres-3 {
+  width: 143px;
+  height: 81px;
+  position: relative;
+}
+
+.name-tag-container {
+  height: 31px;
+  @include displayFlex(center, normal, 0);
+}
+
+.nomer {
+  width: 22px;
+  background-color: #000;
+  font-size: 11px;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  @include displayFlex(center, center, 0);
+}
+
+.nama {
+  width: 121px;
+  padding: 2px 5px;
+  font-size: 8px;
+  font-weight: 700;
+  color: #fff;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  @include displayFlex(normal, center, 0);
+}
+
+/* === Capres & Cawapres 1 === */
+.capres-cawapres-1 {
+  @include capresCawapres(111px, $blueColor);
+}
+
+/* === Capres & Cawapres 2 === */
+.capres-cawapres-2 {
+  @include capresCawapres(89px, $yellowColor);
+}
+
+/* === Capres & Cawapres 3 === */
+.capres-cawapres-3 {
+  @include capresCawapres(87px, $redColor);
+}
+
+.btn {
+  &:link,
+  &:visited {
+    padding: 16px;
+    height: 33px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 32px;
+
+    @include displayFlex(center, center, 0);
+
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+  }
+
+  &:hover,
+  &:active {
+    background-color: #1a1a1a;
+  }
+}

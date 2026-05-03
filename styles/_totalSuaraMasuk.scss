@@ -1,0 +1,56 @@
+.total-suara-masuk {
+  width: 554px;
+  @include flexColumn();
+
+  .bar-total-suara-masuk {
+    @include flexColumn();
+  }
+}
+
+.lembaga-total {
+  font-size: 12px;
+  @include displayFlex(space-between, center, 0);
+
+  p {
+    &:first-child {
+      font-weight: 600;
+    }
+
+    &:last-child {
+      font-weight: 400;
+    }
+  }
+}
+
+.bar {
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  @include displayFlex(center, center, 0);
+}
+
+.bar-biru,
+.bar-oren,
+.bar-merah {
+  padding: 5px 0;
+  @include displayFlex(center, center, 0);
+}
+
+.bar-biru {
+  width: 20%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: $blueColor;
+}
+
+.bar-oren {
+  width: 30%;
+  background-color: $yellowColor;
+}
+
+.bar-merah {
+  width: 50%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: $redColor;
+}
