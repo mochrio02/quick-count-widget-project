@@ -1,3 +1,3 @@
 # Proyek Widget Quick Count
 
-Proyek widget quick count menggunakan HTML, CSS, & SASS
+Proyek quick count widget menggunakan HTML, CSS, & SASS
